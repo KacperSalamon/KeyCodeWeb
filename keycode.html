@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+
+        }
+
+        #letter {
+
+            border: 1px solid black;
+            box-shadow: 1px 1px 3px black;
+            background-color: white;
+            display: inline-flex;
+            flex-direction: column;
+            font-size: 25px;
+            align-items: center;
+            font-weight: bold;
+            padding: 22px;
+            position: relative;
+            margin: 10px;
+            min-width: 120px;
+        } 
+
+        #letter small {
+            border: 1px solid black;
+            color: lightgray;
+            background-color: black;
+            font-size: 15px;
+            position: absolute;
+            top: -30px;
+            left: 0;
+            text-align: center;
+            width: 100%;
+        }
+        #letter:hover {
+            background-color: tomato;
+        }
+       </style>
+    <title>KeyCode Website</title>
+</head>
+<body>
+    <div id="main">
+        <div id="letter">
+            Naciśnij dowolny przycisk
+        </div>
+    </div>
+    <script src="key.js"></script>
+</body>
+</html>
